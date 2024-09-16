@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форми</title>
+</head>
+<body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Робота з формами</h2>
+    <h2>Виконав студент групи КН-32 Шаповалов А. А.</h2>
+    <h2>Номер у списку групи 18</h2>
+    <a href="homepage.html">На головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для реєстрації студента у веб-системі. Необхідно заповнити наступні данні:</p>
+    <ul>
+        <li>
+            основні дані про студента, включають ПІБ, назву групи (вибирається із списку), форму навчання(бюджет або контакт) реалізується у
+вигляді перемикача, коротку інформацію про студента, електрона адреса студента;
+        </li>  
+        <li>
+            особисті дані студента, включають дані паспорта, ідентифікаційний
+код, рік народження, стать (реалізується у вигляді перемикача).
+        </li>
+        </ul>
+    <form action="" method="POST"> 
+        <fieldset>
+            <legend> Основні дані</legend>
+            <label>
+                ПІБ
+                <input id="student_name" type="text"> 
+            </label>
+            <label>Назва групи
+                <select>
+                    <option>КН-31</option>
+                    <option>КН-32</option>
+                    <option>АНД-31</option>
+                </select>
+            </label>
+            <p>Форма навчання
+                <br>
+                <label>Бюджет<input id="state-funded" type="radio" name="edu"></label>
+                <label>Контракт<input id="tuition-based" type="radio" name="edu"></label>
+            </p>
+            <label>
+                Коротка інформація
+                <br>
+                <textarea rows="5" cols="50"></textarea> 
+            </label>
+            <br>
+            <label>
+                Email
+                <input id="student_email" type="email"> 
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend> Особисті дані</legend>
+            <label>
+                Паспорт
+                <input id="student_pasp" type="text"> 
+            </label>
+            <br><br>
+            <label>
+                Ідентифікаційний код
+                <input id="student_id" type="text"> 
+            </label>
+            <br><br>
+            <label>
+                Дата народження
+                <input id="date_of_birth" type="date"> 
+            </label>
+            <p>Стать
+                <br>
+                <label>Чоловіча<input id="male" type="radio" name="sex"></label>
+                <label>Жіноча<input id="female" type="radio" name="sex"></label>
+            </p>
+            
+        </fieldset>
+<button type="submit">Відправити</button>
+
+    </form>
+</body>
+</html>
